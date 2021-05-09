@@ -1,0 +1,36 @@
+<% include ../partials/header %>
+<div class="index-body">
+	<h4><%= currentUser %></h4>
+
+	<div class = "container">
+		<header class="jumbotron index-intro">
+			<div class = "container">
+				<h1>Welcome to Mello!</h1>
+				<h3>Collaborate on projects and share ideas.</h3>
+				<p>
+					<a class = "btn btn-primary btn-large new-project-btn animate__animated animate__swing" href="/campgrounds/new">Add New Project</a>
+				</p>
+			</div>
+		</header>
+	
+		<div class = "row text-center projects-row">
+			<% campgrounds.forEach(function(campground){%>
+				<div class = "col-md-3 col-sm-6">
+					<div class="thumbnail">
+						<img src="<%=campground.image %>">
+						<div class="caption">
+								<h4><%= campground.name %></h4>
+						</div>
+						<p>
+							<a href="/campgrounds/<%= campground._id %>" class="btn btn-primary more-info-btn">More Info</a>
+						</p>
+					</div>
+				</div>
+				<% });%>
+		</div>
+	</div>
+</div>
+
+
+
+<% include ../partials/footer %>
