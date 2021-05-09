@@ -70,6 +70,7 @@
     background-color: white; 
     border-radius: 40px;
     animation-duration: 2s;
+
 }
 
 a{
@@ -111,12 +112,140 @@ a:hover,active,visited{
     bottom: 0;
     top: 20px;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 80%;
     z-index: -1;
 }
 
 .button h3{
     animation-duration: 5s;
+    color: white;
+}
+
+
+/* Register.ejs */
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+    padding-bottom: 1%;
+}
+
+.form-input{
+    background: #fafafa;
+    border: 1px solid #eeeeee;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+.form-button{
+    background: #69d2e7;
+    border: 1px solid #ddd;
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    text-transform: uppercase;
+}
+.form-button:hover{
+    background: #69c8e7;
+}
+.form-header{
+    text-align: center;
+    margin-bottom : 2rem;
+}
+
+.form-header h3{
+    font-size: 40px;
+}
+.form-footer{
+    text-align: center;
+    padding-top: 10px;
+}
+
+a {
+    color: hotpink;
+}
+
+
+
+
+
+/* Login.ejs */
+
+.wrap-login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+    padding-bottom: 1%;
+}
+.login-form{
+    width: 350px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 30px 50px 50px 50px;
+    border-radius: 30px;
+    background: #ffffff;
+    font-size: 16px;
+}
+
+
+.form-input{
+    background: #fafafa;
+    border: 1px solid #eeeeee;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+.form-button{
+    background: #69d2e7;
+    border: 1px solid #ddd;
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    text-transform: uppercase;
+}
+.form-button:hover{
+    background: #69c8e7;
+}
+.form-header{
+    text-align: center;
+    margin-bottom : 2rem;
+}
+
+
+.form-header h2{
+    font-size: 35px;
+}
+
+.form-header p{
+    font-weight: 200;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.form-footer{
+    text-align: center;
+}
+
+.form-footer{
+    text-align: center;
+    padding-top: 10px;
+}
+
+a {
+    color: hotpink;
 }
 
 
@@ -133,7 +262,7 @@ a:hover,active,visited{
 
 .index-intro{
     background-color: #e3fdfd;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 
@@ -160,7 +289,7 @@ a:hover,active,visited{
 
 .thumbnail img{
     width:  100%;
-    height: 300px;
+    height: 250px;
     overflow: hidden;
 }
 
@@ -189,6 +318,20 @@ a:hover,active,visited{
     padding: 10px;
     margin-bottom:0;
     margin-top: 3px;
+}
+
+.trademark{
+    position: relative;
+    left: 150px;
+    top: -5px;
+    font-size: 18px;
+}
+
+.developers-link{
+    position: relative;
+    left: -400px;
+    top: -8px;
+    font-size: 15px;
 }
 
 .social-icons{
