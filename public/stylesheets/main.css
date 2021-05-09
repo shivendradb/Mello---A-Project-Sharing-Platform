@@ -73,9 +73,9 @@
 
 }
 
-a{
+a {
     color: white;  
-}
+} 
 
 a:hover,active,visited{
     text-decoration: none !important;
