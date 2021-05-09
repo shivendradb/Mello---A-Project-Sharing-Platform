@@ -21,7 +21,7 @@
                                     <li><a class="navbar-top-left" href="/login">Login</a></li>
                                     <li><a class="navbar-top-left" href="/register">Sign Up</a></li>
                                 <% } else { %>
-                                    <li> <a href="#"></a> Signed In As <%= currentUser.username %></li>
+                                    <span class="navbar-top-left currentuser"> <a  href="#"></a> Logged in as: <%= currentUser.username %></span>
                                 <li><a class="navbar-top-left" href="/logout">Logout</a></li>
                                 <% } %>
                             </ul>

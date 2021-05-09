@@ -1,4 +1,4 @@
-/* Footer.ejs */
+/* Header.ejs */
 
 .navbar{
     margin-bottom: 0;
@@ -15,9 +15,17 @@
 
 .navbar-top-left{
     font-size:20px;
+    font-family: "Cookies";
     color: black;
 }
 
+.currentuser{
+    margin-right: 180px;
+    position:absolute;
+    right:0px;
+    top:17px;
+
+}
 
 
 
@@ -79,7 +87,7 @@ a:hover,active,visited{
     display: inline-block;
     width: 20%;
     font-size: 16px;
-    margin: -15px 2px;
+    margin: -25px 2px;
     cursor: pointer;
     background-color: #008CBA; 
     border: 2px solid #008CBA;
@@ -90,15 +98,12 @@ a:hover,active,visited{
     
 }
 
-.abtn{
-    animation-duration: 5s;
-}
 
 .button:hover,active,visited {
     animation-duration: 5s;
+    text-decoration: none !important;
     background-color: white;
     color: #008CBA;
-    text-decoration: none !important;
 }
 
 .myVideo{  
@@ -128,7 +133,9 @@ a:hover,active,visited{
 
 .index-intro{
     background-color: #e3fdfd;
+    margin-top: 10px;
 }
+
 
 .new-project-btn{
     padding: 10px 15px;
@@ -143,7 +150,7 @@ a:hover,active,visited{
 }
 
 .projects-row{
-    margin-bottom: 15px;
+    margin: 40px 0;
 }
 
 .thumbnail{
