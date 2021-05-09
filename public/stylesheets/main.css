@@ -44,6 +44,11 @@
 
 
 
+
+
+
+
+
 /* Landing.ejs */
 
 .section {
@@ -122,6 +127,12 @@ a:hover,active,visited{
 }
 
 
+
+
+
+
+
+
 /* Register.ejs */
 
 .wrap {
@@ -131,7 +142,8 @@ a:hover,active,visited{
     justify-content: center;
     align-items: center;
     background: #fafafa;
-    padding-bottom: 1%;
+    padding-bottom: 15%;
+    padding-top: 80px;
 }
 
 .form-input{
@@ -176,6 +188,9 @@ a {
 
 
 
+
+
+
 /* Login.ejs */
 
 .wrap-login{
@@ -185,7 +200,8 @@ a {
     justify-content: center;
     align-items: center;
     background: #fafafa;
-    padding-bottom: 1%;
+    padding-bottom: 15%;
+    padding-top: 80px;
 }
 .login-form{
     width: 350px;
@@ -250,6 +266,10 @@ a {
 
 
 
+
+
+
+
 /* Index.ejs */
 
 .index-body{
@@ -261,7 +281,7 @@ a {
 }
 
 .index-intro{
-    background-color: #e3fdfd;
+    background-color: #D4F1F4;
     margin-top: 20px;
 }
 
@@ -309,6 +329,11 @@ a {
 }
 
 
+
+
+
+
+
 /* Show.ejs */
 
 .container-box{
@@ -331,6 +356,50 @@ a {
 }
 
 
+
+
+
+
+/* New.ejs */
+.container-new-box{
+    padding-bottom: 220px;
+    padding-top: 50px;
+}
+
+.post-new-project{
+    padding-bottom: 18px;
+}
+
+.go-back-btn{
+    padding: 10px;
+    font-size:18px;
+    float: right;
+}
+
+.project-submit-btn{
+    padding-top: 10px;
+}
+
+
+
+
+/* New.ejs Comments */
+
+.container-comment{
+    padding-bottom: 23%;
+    padding-top: 40px;
+}
+
+.comment{
+    padding-bottom: 20px;
+}
+
+.comment-box{
+    padding: 20px;
+}
+
+
+
 /* Footer.ejs */
 .footer{
     text-align: center;
@@ -343,8 +412,8 @@ a {
 
 .trademark{
     position: relative;
-    left: 150px;
-    top: -5px;
+    left: 90px;
+    top: -2px;
     font-size: 18px;
 }
 
@@ -357,7 +426,7 @@ a {
 
 .social-icons{
     position: relative;
-    left: 400px;
+    left: 420px;
     font-size: 15px;
 }
 
