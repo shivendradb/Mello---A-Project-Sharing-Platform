@@ -61,7 +61,7 @@
     border: 2px solid white;
     background-color: white; 
     border-radius: 40px;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 a{
@@ -73,13 +73,13 @@ a:hover,active,visited{
 }
    
 .button {
+    animation-duration: 5s;
     padding: 10px 20px;
     text-align: center;
     display: inline-block;
     width: 20%;
     font-size: 16px;
     margin: -15px 2px;
-    transition-duration: 0.4s;
     cursor: pointer;
     background-color: #008CBA; 
     border: 2px solid #008CBA;
@@ -87,9 +87,15 @@ a:hover,active,visited{
     position: absolute;
     left: 40%;
     bottom: 15%;
+    
+}
+
+.abtn{
+    animation-duration: 5s;
 }
 
 .button:hover,active,visited {
+    animation-duration: 5s;
     background-color: white;
     color: #008CBA;
     text-decoration: none !important;
@@ -104,9 +110,6 @@ a:hover,active,visited{
     z-index: -1;
 }
 
-.animate-btn{
-    animation-duration: 8s;
-}
 .button h3{
     animation-duration: 5s;
 }
