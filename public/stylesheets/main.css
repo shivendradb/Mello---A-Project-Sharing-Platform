@@ -14,7 +14,7 @@
 }
 
 .navbar-top-left{
-    font-size:20px;
+    font-size:18px;
     font-family: "Cookies";
     color: black;
 }
@@ -308,6 +308,27 @@ a {
     text-decoration: none !important;
 }
 
+
+/* Show.ejs */
+
+.container-box{
+    padding-top: 40px;
+}
+
+.project-image{
+    max-width: 80%;
+    max-height: 50%;
+    padding-left:75px;
+    padding-right:75px;
+}
+
+.text-right{
+    float:  left;
+}
+
+.row{
+    padding: 10px;
+}
 
 
 /* Footer.ejs */
