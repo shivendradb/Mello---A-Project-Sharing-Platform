@@ -15,13 +15,19 @@ var commentRoutes = require("./routes/comments");
 var campgroundRoutes = require("./routes/campgrounds");
 var indexRoutes = require("./routes/index");
 
-mongoose.connect('mongodb://localhost:27017/Mello', { useNewUrlParser: true, useUnifiedTopology: true });
+
+//Middlewares
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json());
 app.set("view engine","ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
+
+
+//db connection
+mongoose.connect('mongodb://localhost:27017/Mello', { useNewUrlParser: true, useUnifiedTopology: true });
+
 
 //seedDB(); 
 
