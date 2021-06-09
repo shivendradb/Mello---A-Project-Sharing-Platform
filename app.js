@@ -1,6 +1,4 @@
 var express = require("express");
-var app = express();
-// var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 var flash = require("connect-flash");
 var passport = require("passport");
@@ -16,20 +14,19 @@ var campgroundRoutes = require("./routes/campgrounds");
 var indexRoutes = require("./routes/index");
 
 
+var app = express();
+
 //Middlewares
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json());
-app.set("view engine","ejs");
+app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
 
 
 //db connection
-mongoose.connect('mongodb://localhost:27017/Mello', { useNewUrlParser: true, useUnifiedTopology: true });
-
-
-//seedDB(); 
+mongoose.connect('mongodb+srv://admin:km4ooDkp0wwvxKMM@cluster0.doqwc.mongodb.net/MelloDB?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 //PASSPORT CONFIG
 
@@ -45,7 +42,7 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-app.use(function(req, res, next){
+app.use(function (req, res, next) {
 	res.locals.currentUser = req.user;
 	res.locals.error = req.flash("error");
 	res.locals.success = req.flash("success");
@@ -60,5 +57,5 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 
 var port = process.env.PORT || 3000;
 app.listen(port, function () {
-  console.log("Mello Server started on port 3000");
+	console.log(`Mello Server started on port ${port}`);
 });
